@@ -1,0 +1,130 @@
+* {
+  font-family: 'Dosis'
+}
+.sidebar .nav p
+{
+  font-size: 18px;
+}
+
+.sidebar .nav li a {
+  margin-left: 0px !important;
+}
+
+.sidebar[data-color=purple] li.active > a {
+  background-color: #7b1fa2;
+  background-image: linear-gradient(to right, #303f9f, #453ba2, #5735a4, #6a2ca4, #7b1fa2);
+  width: 93%;
+  margin-left: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.sidebar-background {
+  background: none !important;
+  background: #fff;
+}
+
+.sidebar .nav i {
+  color: #777;
+}
+
+.sidebar .logo:after {
+  display: none;
+}
+
+.sidebar .logo-img {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 60px;
+  img {
+    position: static;
+    margin: auto;
+    width: 80%;
+    display: block;
+  }
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+
+#sidebarBottomItems {
+  margin-top: 50%!important;
+}
+.navbar.fixed-top
+{
+  padding: 10px 10px 70px 10px;
+  background-color: #7b1fa2;
+  background-image: linear-gradient(to right, #303f9f, #453ba2, #5735a4, #6a2ca4, #7b1fa2);
+  #navbarSearchWrapper
+  {
+    background-image: linear-gradient(to right, #7c73bd, #926abe);
+    border: none!important;
+    padding: 0 0 0 60px;
+    width: 60%;
+    position: relative;
+    display: inline-block;
+    border-radius: 3px;
+    input
+    {
+      padding: 10px 10px;
+      background-color: transparent;
+      border: none;
+      outline: 0;
+      color: #faf6ff;
+      font-size: 1.2rem;
+      width: 100%;
+    }
+    i{
+      position: absolute;
+      left: 30px;
+      font-size: 26px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #c9c5d8;
+    }
+  }
+  #navbarSearchWrapper input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c9c5d8;
+    opacity: 0.9; /* Firefox */
+  }
+  #navbarSearchWrapper input:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c9c5d8;
+    opacity: 0.9; /* Internet Explorer 10-11 */
+  }
+  #navbarSearchWrapper input:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c9c5d8;
+    opacity: 0.9; /* Edge */
+  }
+}
+.main-panel .main-content
+{
+  padding: 30px 25px;
+}
+.main-content .container-fluid
+{
+  background-color: #fff;
+  position: relative;
+  top: -15px;
+  border-radius: 3px;
+  z-index: 99999999;
+}
+
+//--------------------------margins-----------------------------
+.margin-t-50 {
+  margin-top: 50px;
+}
+.margin-l-20 {
+  margin-left: 20px;
+}
+.margin-l-40 {
+  margin-left: 40px;
+}
+.margin-l-60 {
+  margin-left: 50px;
+}
+.margin-l-80 {
+  margin-left: 80px;
+}
+//--------------------------margins-----------------------------
