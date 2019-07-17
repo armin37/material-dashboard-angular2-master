@@ -8,6 +8,8 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import {NewIntakeComponent} from '../../client/new-intake/new-intake.component';
+import {ClientComponent} from '../../client/client.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -56,7 +58,9 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
     { path: 'typography',     component: TypographyComponent },
+    { path: 'new-intake', /*loadChildren: './new-intake/new-intake.component.ts#NewIntakeComponent'   */  component: NewIntakeComponent },
     { path: 'icons',          component: IconsComponent },
+    { path: 'client',          component: ClientComponent },
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
