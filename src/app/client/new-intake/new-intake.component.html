@@ -1,0 +1,110 @@
+<div class="main-content">
+    <div class="page-wrapper-cs">
+        <div class="new-intake-header">
+            <p>new-intake</p>
+        </div>
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-12 ui-md-4">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                    <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="ui-g-12 ui-md-4">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                        <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="ui-g-12 ui-md-4">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                        <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-select class="new-intake-input" >
+                        <mat-option *ngFor="let food of foods" [value]="food.value">
+                            {{food.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </div>
+            </div>
+
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                    <input matInput class="new-intake-input"  [matDatepicker]="picker1" placeholder="Choose a date">
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                    <input matInput class="new-intake-input"  [matDatepicker]="picker" placeholder="Choose a date">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                        <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                    </mat-form-field>
+                </div>
+            </div>
+
+        </div>
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                        <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                        <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                        <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-3">
+                <select class="new-intake-input">
+                    <option *ngFor="let state of states" [ngValue]="state">
+                        {{ state.abbrev }}
+                    </option>
+                </select>
+            </div>
+            <div class="ui-g-12 ui-md-3">
+                <div class="ui-inputgroup">
+                    <button type="button" class="new-intake-input">save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

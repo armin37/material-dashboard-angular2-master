@@ -14,7 +14,12 @@ export class NavbarComponent implements OnInit {
       mobile_menu_visible: any = 0;
     private toggleButton: any;
     private sidebarVisible: boolean;
-
+    private paths: any[] = [
+        {
+         name:'newIntake',
+            url:'/new-intake'
+        }
+    ]
     constructor(location: Location,  private element: ElementRef, private router: Router) {
       this.location = location;
           this.sidebarVisible = false;

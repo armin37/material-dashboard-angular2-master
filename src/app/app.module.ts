@@ -24,6 +24,8 @@ import {
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { NewIntakeComponent } from './client/new-intake/new-intake.component';
 import { ClientComponent } from './client/client.component';
+import {MatDatepickerModule, MatNativeDateModule} from '@angular/material';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   imports: [
@@ -36,13 +38,16 @@ import { ClientComponent } from './client/client.component';
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
-    })
+    }),
+      MatDatepickerModule,
+      MatNativeDateModule,
+      MatTabsModule
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
   ],
-  providers: [],
+  providers: [MatDatepickerModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

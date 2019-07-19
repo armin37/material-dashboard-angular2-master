@@ -18,10 +18,12 @@ import {
     MatRippleModule,
     MatFormFieldModule,
     MatTooltipModule,
-    MatSelectModule
+    MatSelectModule, MatDatepickerModule
 } from '@angular/material';
 import {NewIntakeComponent} from '../../client/new-intake/new-intake.component';
 import {ClientComponent} from '../../client/client.component';
+import {CalendarModule} from 'primeng/calendar';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
     imports: [
@@ -29,12 +31,15 @@ import {ClientComponent} from '../../client/client.component';
         RouterModule.forChild(AdminLayoutRoutes),
         FormsModule,
         ReactiveFormsModule,
+        CalendarModule,
         MatButtonModule,
         MatRippleModule,
         MatFormFieldModule,
         MatInputModule,
         MatSelectModule,
         MatTooltipModule,
+        MatDatepickerModule,
+        MatTabsModule
     ],
     declarations: [
         DashboardComponent,
@@ -46,7 +51,10 @@ import {ClientComponent} from '../../client/client.component';
         NotificationsComponent,
         UpgradeComponent,
         NewIntakeComponent,
-        ClientComponent
+        ClientComponent,
+    ],
+    providers: [
+        MatDatepickerModule,
     ]
 })
 

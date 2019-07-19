@@ -58,7 +58,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
     { path: 'typography',     component: TypographyComponent },
-    { path: 'new-intake', /*loadChildren: './new-intake/new-intake.component.ts#NewIntakeComponent'   */  component: NewIntakeComponent },
+    { path: 'new-intake', component: NewIntakeComponent },
     { path: 'icons',          component: IconsComponent },
     { path: 'client',          component: ClientComponent },
     { path: 'maps',           component: MapsComponent },
