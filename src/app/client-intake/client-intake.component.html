@@ -1,0 +1,154 @@
+<div class="main-content">
+    <div class="page-wrapper-cs">
+        <div class="new-intake-header">
+            <div class="row client-information">
+                <div class="col-md-3 padd-l-45 padd-30">
+                    <div id="profile_place_holder" class="text-center">
+                        Upload Image
+                    </div>
+                </div>
+
+                <div class="col-md-4 padd-t-30">
+                    <div class="row item">
+                        <div class="col-5">Name:</div>
+                        <div class="col-7">Armin Momeni</div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-5">Address:</div>
+                        <div class="col-7">5Th Avenue</div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-5">Client Type:</div>
+                        <div class="col-7">Parent</div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-5">Email:</div>
+                        <div class="col-7">j.doe@gmail.com</div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-5">Alerts:</div>
+                        <div class="col-7">None</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 padd-t-30">
+                    <div class="row item">
+                        <div class="col-5">Next To Kin:</div>
+                        <div class="col-7">Jane Doe</div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-5">Band or Community:</div>
+                        <div class="col-7">Rocky Cree</div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-5">Intake Date:</div>
+                        <div class="col-7">05/22/2019</div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-5">Assigned Advocate:</div>
+                        <div class="col-7">Micheal Carick</div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-5">Status:</div>
+                        <div class="col-7">Pre-Intake Completed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <mat-tab-group class="custom-tab-1">
+                <mat-tab label="General Information">
+                    <div class="p-grid">
+                        <div class="p-col">
+                            <div class="item-wrapper">
+                                <mat-form-field>
+                                    <input matInput class="new-intake-input" [matDatepicker]="picker1"
+                                           placeholder="Choose a date">
+                                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker1></mat-datepicker>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="p-col">
+                            <div class="item-wrapper">
+                                <div class="ui-inputgroup">
+                                    <mat-form-field>
+                                        <input matInput type="text" class="new-intake-input"
+                                               placeholder="How Long Have You Lived In The Home?">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-grid">
+                        <div class="p-col">
+                            <div class="item-wrapper">
+                                <mat-form-field>
+                                    <input matInput type="text" class="new-intake-input"
+                                           placeholder="Who All lives At Home?">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="p-col">
+                            <div class="item-wrapper">
+                                <mat-radio-group aria-label="Living Together">
+                                    <label>Living Together</label>
+                                    <mat-radio-button value="1">Yes</mat-radio-button>
+                                    <mat-radio-button value="2">No</mat-radio-button>
+                                </mat-radio-group>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-grid">
+                        <div class="p-col-6">
+                            <div class="item-wrapper">
+                                <mat-form-field>
+                                    <input matInput type="text" class="new-intake-input"
+                                           placeholder="First Nation Membership">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="p-col-6">
+                            <div class="item-wrapper">
+                                <mat-form-field>
+                                    <input matInput type="text" class="new-intake-input"
+                                           placeholder="First Nation Membership(Father)">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-grid">
+                        <div class="p-col-6">
+                            <div class="item-wrapper">
+                                <mat-form-field>
+                                    <input matInput type="text" class="new-intake-input"
+                                           placeholder="Are You Children In Care">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="p-col-6 p-col-align-end">
+                            <button type="button" class="gray-btn">Save & Continue</button>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="CFS Details">
+                    <div class="row">
+                        <div class="col">
+                            <mat-form-field>
+                                <input matInput type="text" class="new-intake-input" placeholder="Price">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Guardianship/Kinship"> Guardianship/Kinship</mat-tab>
+                <mat-tab label="Family Tree"> Family Tree</mat-tab>
+                <mat-tab label="Children Detail"> Children Detail</mat-tab>
+                <mat-tab label="CFS Timeline"> CFS Timeline</mat-tab>
+                <mat-tab label="More"> More</mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+</div>

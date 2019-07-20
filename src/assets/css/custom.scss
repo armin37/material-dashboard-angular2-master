@@ -3,8 +3,8 @@
 * {
   font-family: 'Dosis'
 }
-.sidebar .nav p
-{
+
+.sidebar .nav p {
   font-size: 18px;
 }
 
@@ -33,9 +33,11 @@
 .sidebar .logo:after {
   display: none;
 }
-.wrapper-container{
+
+.wrapper-container {
   //padding:5px 10px;
 }
+
 .sidebar .logo-img {
   width: 100%;
   margin-left: 0;
@@ -52,27 +54,24 @@
   transform: rotate(180deg);
 }
 
-
 #sidebarBottomItems {
   position: absolute;
   bottom: 10%;
 }
-.navbar.fixed-top
-{
+
+.navbar.fixed-top {
   padding: 10px 10px 70px 10px;
   background-color: #7b1fa2;
   background-image: linear-gradient(to right, #303f9f, #453ba2, #5735a4, #6a2ca4, #7b1fa2);
-  #navbarSearchWrapper
-  {
+  #navbarSearchWrapper {
     background-image: linear-gradient(to right, #7c73bd, #926abe);
-    border: none!important;
+    border: none !important;
     padding: 0 0 0 60px;
     width: 60%;
     position: relative;
     display: inline-block;
     border-radius: 3px;
-    input
-    {
+    input {
       padding: 10px 10px;
       background-color: transparent;
       border: none;
@@ -81,7 +80,7 @@
       font-size: 1.2rem;
       width: 100%;
     }
-    i{
+    i {
       position: absolute;
       left: 30px;
       font-size: 26px;
@@ -103,12 +102,12 @@
     opacity: 0.9; /* Edge */
   }
 }
-.main-panel .main-content
-{
+
+.main-panel .main-content {
   padding: 30px 25px;
 }
-.main-content .page-wrapper-cs
-{
+
+.main-content .page-wrapper-cs {
   background-color: #fff;
   position: relative;
   top: -15px;
@@ -120,25 +119,143 @@
 .margin-t-50 {
   margin-top: 50px;
 }
+
 .margin-l-20 {
   margin-left: 20px;
 }
+
 .margin-l-40 {
   margin-left: 40px;
 }
+
 .margin-l-60 {
   margin-left: 50px;
 }
+
 .margin-l-80 {
   margin-left: 80px;
 }
+
 //--------------------------margins-----------------------------
 
-.mat-datepicker-popup,.mat-datepicker-popup *,.cdk-overlay-container
-{
-  z-index: 999999999999999!important;
+//--------------------------paddings-----------------------------
+.padd-10 {
+  padding: 10px;
 }
-.mat-form-field-underline
-{
+
+.padd-20 {
+  padding: 20px;
+}
+
+.padd-30 {
+  padding: 30px;
+}
+
+.padd-40 {
+  padding: 40px;
+}
+
+.padd-l-45 {
+  padding-left: 45px;
+}
+.padd-t-30 {
+  padding-top: 30px;
+}
+
+//--------------------------paddings-----------------------------
+
+.mat-datepicker-popup, .mat-datepicker-popup *, .cdk-overlay-container {
+  z-index: 999999999999999 !important;
+}
+
+.mat-form-field-underline {
   display: none;
+}
+.custom-tab-1
+{
+  .mat-tab-label
+  {
+    .mat-tab-label-content
+    {
+      font-weight: 900;
+    }
+  }
+  .mat-tab-label-active
+  {
+    border-bottom: 3px solid #654;
+  }
+  .mat-ink-bar
+  {
+    background-color: #7b1fa2!important;
+    height: 4px;
+  }
+  .mat-tab-body
+  {
+    padding: 0 22px;
+    overflow-x: hidden;
+    .item-wrapper
+    {
+      width: 90%;
+      border-bottom: 2px solid #ddd;
+      height: 100%;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+    .mat-tab-body-content
+    {
+      overflow-x: hidden;
+    }
+    .mat-form-field-wrapper
+    {
+      padding-bottom: 10px;
+    }
+    .mat-form-field-suffix .mat-icon-button
+    {
+      position: absolute;
+      right: 4px;
+      top: -8px;
+    }
+    .mat-form-field
+    {
+      width: 100%;
+      .mat-form-field-infix
+      {
+        //border-bottom: 2px solid #ddd;
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+    mat-radio-group
+    {
+      display: block;
+      padding: .4375em 0;
+      border-top: 13.5px solid transparent;
+      .mat-radio-button
+      {
+        margin-left: 20px;
+      }
+    }
+    label
+    {
+      color: #999;
+      line-height: 27px;
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    .mat-form-field-label-wrapper
+    {
+      padding-bottom: 10px;
+    }
+    .mat-radio-group,.mat-form-field
+    {
+      padding-bottom: 0;
+    }
+  }
+}
+.gray-btn{
+  background-color: #eee;
+  color: #888;
+  border: none;
+  border-radius: 2px;
+  padding: 6px 35px;
 }
