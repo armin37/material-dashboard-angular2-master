@@ -114,6 +114,7 @@
   top: -15px;
   border-radius: 3px;
   z-index: 99999999;
+  overflow: hidden;
 }
 
 //--------------------------margins-----------------------------
@@ -141,4 +142,11 @@
 .mat-form-field-underline
 {
   display: none;
+}
+
+
+
+/// allllllliiiiii
+.mat-datepicker-toggle-default-icon{
+  width: 2em !important;
 }

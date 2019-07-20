@@ -1,0 +1,55 @@
+.mat-form-field-underline
+{
+  height: 0px!important;
+  padding: 0!important;
+  margin: 0!important;
+}
+.new-intake-header{
+  height: 39px;
+  border-bottom: #323e9f 5px solid;
+  display: inline-block;
+}
+.new-intake-header > p {
+  padding: 5px 15px;
+  font-size: x-large;
+}
+.new-intake-input:focus{
+  border-bottom: 5px solid #363ea0;
+}
+.new-intake-input{
+  padding: 5px;
+  /* margin: 10px 0px; */
+  width: 100%;
+  border: 0px;
+  border-bottom: 5px solid rgba(128, 128, 128, 0.35);
+}
+
+mat-form-field{
+  width: 100%;
+}
+.client-header-items{
+  padding: 20px 40px;
+  font-size: x-large;
+}
+.client-filter-items{
+  //padding: 20px 40px;
+  font-size: large;
+}
+.client-header{
+  padding: 0 50px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.52);
+}
+table *{
+  font-size: 19px;
+}
+.new-intake-select{
+  //padding: 4.5px 0;
+  /* margin: 10px 0px; */
+  //width: 100%;
+  border: 0px;
+  border-bottom: 5px solid rgba(128, 128, 128, 0.35);
+}
+.client-button {
+  background: #ededed;
+  padding: 0 35px;
+}

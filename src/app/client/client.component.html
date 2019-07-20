@@ -1,12 +1,79 @@
-<mat-tab-group style="margin: 200px 0">
-    <mat-tab label="First"> Content 1 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Third"> Content 3 </mat-tab>
-</mat-tab-group>
+<div class="main-content">
+    <div class="page-wrapper-cs">
+        <div class="ui-g ui-fluid row client-header">
+            <div class="ui-g-12 ui-md-6 col-6 text-left client-header-items">
+                client - showing all client
+            </div>
+            <div class="ui-g-12 ui-md-6 col-6 text-right  client-header-items">
+                <i class="margin-l-20 fa fa-plus"></i>
+                <a class="margin-l-20 ">New Intake</a>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid row client-header">
+            <div class="ui-g-12 ui-md-6 col-8 row text-left client-filter-items">
+                <div class="ui-g-12 ui-md-4 col-4">
+                    <div class="ui-inputgroup">
+                            <mat-select  class="new-intake-select"   >
+                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                    {{food.viewValue}}
+                                </mat-option>
+                            </mat-select>
+                    </div>
+                </div>
+                <div class="ui-g-12 ui-md-4 col-4">
+                    <div class="ui-inputgroup">
+                            <mat-select  class="new-intake-select">
+                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                    {{food.viewValue}}
+                                </mat-option>
+                            </mat-select>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-6 col-4 text-right  client-header-items">
+                <button class="client-button" mat-stroked-button>Export CSV</button>
+            </div>
+        </div>
+    <table mat-table matSort [dataSource]="dataSource" class="col-md-12 mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="Account">
+            <th mat-header-cell *matHeaderCellDef> Account</th>
+            <td mat-cell *matCellDef="let element"> {{element.Account}}</td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="Name">
+            <th mat-header-cell *matHeaderCellDef> Name</th>
+            <td mat-cell *matCellDef="let element"> {{element.Name}}</td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="Email">
+            <th mat-header-cell *matHeaderCellDef> Email</th>
+            <td mat-cell *matCellDef="let element"> {{element.Email}}</td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="Phone">
+            <th mat-header-cell *matHeaderCellDef> Phone</th>
+            <td mat-cell *matCellDef="let element"> {{element.Phone}}</td>
+        </ng-container>
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="Address">
+            <th mat-header-cell *matHeaderCellDef> Address</th>
+            <td mat-cell *matCellDef="let element"> {{element.Address}}</td>
+        </ng-container>
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="btn">
+            <th mat-header-cell *matHeaderCellDef> </th>
+            <td mat-cell *matCellDef="let element"><button class="client-button" mat-stroked-button>Edit</button></td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>
+</div>

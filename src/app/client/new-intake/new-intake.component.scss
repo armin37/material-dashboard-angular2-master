@@ -26,3 +26,27 @@
 mat-form-field{
   width: 100%;
 }
+
+.new-intake-button{
+  margin: 0.7em 0px;
+  padding: 10px;
+
+  /* margin: 10px 0px; */
+  width: 100%;
+  border: 0px;
+  //border-bottom: 5px solid rgba(128, 128, 128, 0.35);
+}
+.new-intake-select{
+  padding: 4.5px 0;
+
+  /* margin: 10px 0px; */
+  width: 100%;
+  border: 0px;
+  border-bottom: 5px solid rgba(128, 128, 128, 0.35);
+}
+.main-content *{
+  font-size: large;
+}
+.mat-datepicker-toggle-default-icon{
+ width: 2em;
+}

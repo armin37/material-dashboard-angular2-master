@@ -24,6 +24,7 @@ import {NewIntakeComponent} from '../../client/new-intake/new-intake.component';
 import {ClientComponent} from '../../client/client.component';
 import {CalendarModule} from 'primeng/calendar';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
     imports: [
@@ -39,7 +40,8 @@ import {MatTabsModule} from '@angular/material/tabs';
         MatSelectModule,
         MatTooltipModule,
         MatDatepickerModule,
-        MatTabsModule
+        MatTabsModule,
+        MatTableModule
     ],
     declarations: [
         DashboardComponent,

@@ -7,7 +7,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div class="ui-inputgroup">
                     <mat-form-field  >
-                    <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                    <input matInput type="text"  class="new-intake-input" placeholder="First Name">
                     </mat-form-field>
                 </div>
             </div>
@@ -15,7 +15,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div class="ui-inputgroup">
                     <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                        <input matInput type="text"  class="new-intake-input" placeholder="Middle Name">
                     </mat-form-field>
                 </div>
             </div>
@@ -23,7 +23,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div class="ui-inputgroup">
                     <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                        <input matInput type="text"  class="new-intake-input" placeholder="Last Name">
                     </mat-form-field>
                 </div>
             </div>
@@ -31,18 +31,21 @@
         <div class="ui-g ui-fluid">
             <div class="ui-g-12 ui-md-6">
                 <div class="ui-inputgroup">
-                    <mat-select class="new-intake-input" >
-                        <mat-option *ngFor="let food of foods" [value]="food.value">
-                            {{food.viewValue}}
-                        </mat-option>
-                    </mat-select>
+                    <mat-form-field>
+                        <mat-label>Client Type</mat-label>
+                        <mat-select  class="new-intake-select"   >
+                            <mat-option *ngFor="let food of foods" [value]="food.value">
+                                {{food.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
                 </div>
             </div>
 
             <div class="ui-g-12 ui-md-6">
                 <div class="ui-inputgroup">
                     <mat-form-field  >
-                    <input matInput class="new-intake-input"  [matDatepicker]="picker1" placeholder="Choose a date">
+                    <input matInput class="new-intake-input"  [matDatepicker]="picker1" placeholder="Date">
                     <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
                     <mat-datepicker #picker1></mat-datepicker>
                     </mat-form-field>
@@ -53,7 +56,7 @@
             <div class="ui-g-12 ui-md-6">
                 <div class="ui-inputgroup">
                     <mat-form-field  >
-                    <input matInput class="new-intake-input"  [matDatepicker]="picker" placeholder="Choose a date">
+                    <input matInput class="new-intake-input"  [matDatepicker]="picker" placeholder="Date of birth">
                     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-datepicker #picker></mat-datepicker>
                     </mat-form-field>
@@ -63,7 +66,7 @@
             <div class="ui-g-12 ui-md-6">
                 <div class="ui-inputgroup">
                     <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                        <input matInput type="text"  class="new-intake-input" placeholder="Address">
                     </mat-form-field>
                 </div>
             </div>
@@ -73,14 +76,14 @@
             <div class="ui-g-12 ui-md-6">
                 <div class="ui-inputgroup">
                     <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                        <input matInput type="text"  class="new-intake-input" placeholder="City">
                     </mat-form-field>
                 </div>
             </div>
             <div class="ui-g-12 ui-md-6">
                 <div class="ui-inputgroup">
                     <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                        <input matInput type="text"  class="new-intake-input" placeholder="Postal Code">
                     </mat-form-field>
                 </div>
             </div>
@@ -89,20 +92,71 @@
             <div class="ui-g-12 ui-md-6">
                 <div class="ui-inputgroup">
                     <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Price">
+                        <input matInput type="text"  class="new-intake-input" placeholder="Province">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                        <input matInput type="text"  class="new-intake-input" placeholder="Phone">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                        <input matInput type="text"  class="new-intake-input" placeholder="Second Phone">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                        <input matInput type="text"  class="new-intake-input" placeholder="Email Address">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                        <input matInput type="text"  class="new-intake-input" placeholder="Emergency Contact Name">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                        <input matInput type="text"  class="new-intake-input" placeholder="Emergency Contact Phone">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-12 ui-md-6">
+                <div class="ui-inputgroup">
+                    <mat-form-field  >
+                        <input matInput type="text"  class="new-intake-input" placeholder="Brand or Community">
                     </mat-form-field>
                 </div>
             </div>
             <div class="ui-g-12 ui-md-3">
-                <select class="new-intake-input">
-                    <option *ngFor="let state of states" [ngValue]="state">
-                        {{ state.abbrev }}
-                    </option>
-                </select>
+                <mat-form-field>
+                <mat-label>Program</mat-label>
+                <mat-select  class="new-intake-select"   >
+                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                    </mat-option>
+                </mat-select>
+                </mat-form-field>
             </div>
             <div class="ui-g-12 ui-md-3">
                 <div class="ui-inputgroup">
-                    <button type="button" class="new-intake-input">save</button>
+                    <button type="button"  class="new-intake-button">save</button>
                 </div>
             </div>
         </div>
