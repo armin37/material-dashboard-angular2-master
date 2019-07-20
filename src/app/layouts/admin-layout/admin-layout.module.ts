@@ -26,6 +26,7 @@ import {CalendarModule} from 'primeng/calendar';
 import {MatTabsModule} from '@angular/material';
 import {ClientIntakeComponent} from '../../client-intake/client-intake.component';
 import {RadioButtonModule} from 'primeng/radiobutton';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
     imports: [
@@ -44,7 +45,8 @@ import {RadioButtonModule} from 'primeng/radiobutton';
         MatTabsModule,
         MatCheckboxModule,
         MatRadioModule,
-        RadioButtonModule
+        RadioButtonModule,
+        MatTableModule
     ],
     declarations: [
         DashboardComponent,
