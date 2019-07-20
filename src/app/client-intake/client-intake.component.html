@@ -59,95 +59,29 @@
         <div>
             <mat-tab-group class="custom-tab-1">
                 <mat-tab label="General Information">
-                    <div class="p-grid">
-                        <div class="p-col">
-                            <div class="item-wrapper">
-                                <mat-form-field>
-                                    <input matInput class="new-intake-input" [matDatepicker]="picker1"
-                                           placeholder="Choose a date">
-                                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-                                    <mat-datepicker #picker1></mat-datepicker>
-                                </mat-form-field>
-                            </div>
-                        </div>
-                        <div class="p-col">
-                            <div class="item-wrapper">
-                                <div class="ui-inputgroup">
-                                    <mat-form-field>
-                                        <input matInput type="text" class="new-intake-input"
-                                               placeholder="How Long Have You Lived In The Home?">
-                                    </mat-form-field>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-grid">
-                        <div class="p-col">
-                            <div class="item-wrapper">
-                                <mat-form-field>
-                                    <input matInput type="text" class="new-intake-input"
-                                           placeholder="Who All lives At Home?">
-                                </mat-form-field>
-                            </div>
-                        </div>
-                        <div class="p-col">
-                            <div class="item-wrapper">
-                                <mat-radio-group aria-label="Living Together">
-                                    <label>Living Together</label>
-                                    <mat-radio-button value="1">Yes</mat-radio-button>
-                                    <mat-radio-button value="2">No</mat-radio-button>
-                                </mat-radio-group>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-grid">
-                        <div class="p-col-6">
-                            <div class="item-wrapper">
-                                <mat-form-field>
-                                    <input matInput type="text" class="new-intake-input"
-                                           placeholder="First Nation Membership">
-                                </mat-form-field>
-                            </div>
-                        </div>
-                        <div class="p-col-6">
-                            <div class="item-wrapper">
-                                <mat-form-field>
-                                    <input matInput type="text" class="new-intake-input"
-                                           placeholder="First Nation Membership(Father)">
-                                </mat-form-field>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-grid">
-                        <div class="p-col-6">
-                            <div class="item-wrapper">
-                                <mat-form-field>
-                                    <input matInput type="text" class="new-intake-input"
-                                           placeholder="Are You Children In Care">
-                                </mat-form-field>
-                            </div>
-                        </div>
-                        <div class="p-col-6 p-col-align-end">
-                            <button type="button" class="gray-btn">Save & Continue</button>
-                        </div>
-                    </div>
+                    <app-cl-general-info></app-cl-general-info>
                 </mat-tab>
                 <mat-tab label="CFS Details">
-                    <div class="row">
-                        <div class="col">
-                            <mat-form-field>
-                                <input matInput type="text" class="new-intake-input" placeholder="Price">
-                            </mat-form-field>
-                        </div>
-                    </div>
+                    <app-cl-cfs-details></app-cl-cfs-details>
                 </mat-tab>
-                <mat-tab label="Guardianship/Kinship"> Guardianship/Kinship</mat-tab>
-                <mat-tab label="Family Tree"> Family Tree</mat-tab>
-                <mat-tab label="Children Detail"> Children Detail</mat-tab>
-                <mat-tab label="CFS Timeline"> CFS Timeline</mat-tab>
-                <mat-tab label="More"> More</mat-tab>
+                <mat-tab label="Guardianship/Kinship">
+                    <app-cl-guardianship-kinship></app-cl-guardianship-kinship>
+                </mat-tab>
+                <mat-tab label="Family Tree">
+                    <app-cl-family-tree></app-cl-family-tree>
+                </mat-tab>
+                <mat-tab label="Children Detail">
+                    <app-cl-children-detail></app-cl-children-detail>
+                </mat-tab>
+                <mat-tab label="CFS Timeline">
+                    <app-cl-cfs-timeline></app-cl-cfs-timeline>
+                </mat-tab>
+                <mat-tab label="Personal Assessment">
+                    <app-cl-personal-assessment></app-cl-personal-assessment>
+                </mat-tab>
+                <mat-tab label="Opportunity">
+                    <app-cl-opportunity></app-cl-opportunity>
+                </mat-tab>
             </mat-tab-group>
         </div>
     </div>

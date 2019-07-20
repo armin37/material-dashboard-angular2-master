@@ -1,0 +1,73 @@
+<div class="p-grid">
+    <div class="p-col">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput class="new-intake-input" [matDatepicker]="picker1"
+                       placeholder="Choose a date">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="p-col">
+        <div class="item-wrapper">
+            <div class="ui-inputgroup">
+                <mat-form-field>
+                    <input matInput type="text" class="new-intake-input"
+                           placeholder="How Long Have You Lived In The Home?">
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="p-grid">
+    <div class="p-col">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="Who All lives At Home?">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="p-col">
+        <div class="item-wrapper">
+            <mat-radio-group aria-label="Living Together">
+                <label>Living Together</label>
+                <mat-radio-button value="1">Yes</mat-radio-button>
+                <mat-radio-button value="2">No</mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </div>
+</div>
+<div class="p-grid">
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="First Nation Membership">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="First Nation Membership(Father)">
+            </mat-form-field>
+        </div>
+    </div>
+</div>
+<div class="p-grid">
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="Are You Children In Care">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="p-col-6 p-col-align-end">
+        <button type="button" class="gray-btn">Save & Continue</button>
+    </div>
+</div>
