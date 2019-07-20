@@ -18,13 +18,14 @@ import {
     MatRippleModule,
     MatFormFieldModule,
     MatTooltipModule,
-    MatSelectModule, MatDatepickerModule
+    MatSelectModule, MatDatepickerModule, MatCheckboxModule, MatRadioModule
 } from '@angular/material';
 import {NewIntakeComponent} from '../../client/new-intake/new-intake.component';
 import {ClientComponent} from '../../client/client.component';
 import {CalendarModule} from 'primeng/calendar';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatTableModule} from '@angular/material/table';
+import {MatTabsModule} from '@angular/material';
+import {ClientIntakeComponent} from '../../client-intake/client-intake.component';
+import {RadioButtonModule} from 'primeng/radiobutton';
 
 @NgModule({
     imports: [
@@ -41,7 +42,9 @@ import {MatTableModule} from '@angular/material/table';
         MatTooltipModule,
         MatDatepickerModule,
         MatTabsModule,
-        MatTableModule
+        MatCheckboxModule,
+        MatRadioModule,
+        RadioButtonModule
     ],
     declarations: [
         DashboardComponent,
@@ -54,6 +57,7 @@ import {MatTableModule} from '@angular/material/table';
         UpgradeComponent,
         NewIntakeComponent,
         ClientComponent,
+        ClientIntakeComponent
     ],
     providers: [
         MatDatepickerModule,
