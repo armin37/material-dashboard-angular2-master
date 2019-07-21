@@ -117,14 +117,17 @@
 
 //--------------------------margins-----------------------------
 .margin-t-10 {
-  margin-top: 10px!important;
+  margin-top: 10px !important;
 }
+
 .margin-t-20 {
-  margin-top: 20px!important;
+  margin-top: 20px !important;
 }
+
 .margin-t-30 {
-  margin-top: 30px!important;
+  margin-top: 30px !important;
 }
+
 .margin-t-50 {
   margin-top: 50px;
 }
@@ -143,6 +146,10 @@
 
 .margin-l-80 {
   margin-left: 80px;
+}
+
+.margin-b-10 {
+  margin-bottom: 10px;
 }
 
 //--------------------------margins-----------------------------
@@ -167,6 +174,7 @@
 .padd-l-45 {
   padding-left: 45px;
 }
+
 .padd-t-30 {
   padding-top: 30px;
 }
@@ -180,88 +188,82 @@
 .mat-form-field-underline {
   display: none;
 }
-.custom-tab-1
-{
-  .mat-tab-label
-  {
-    .mat-tab-label-content
-    {
+
+.custom-tab-1 {
+  .mat-tab-label {
+    .mat-tab-label-content {
       font-weight: 900;
     }
   }
-  .mat-tab-label-active
-  {
+  .mat-tab-label-active {
     border-bottom: 3px solid #654;
   }
-  .mat-ink-bar
-  {
-    background-color: #7b1fa2!important;
+  .mat-ink-bar {
+    background-color: #7b1fa2 !important;
     height: 4px;
   }
-  .mat-tab-body
-  {
+  .mat-tab-body {
     padding: 0 22px 70px 22px;
     overflow-x: hidden;
-    .item-wrapper
-    {
+    .item-wrapper {
       width: 90%;
       border-bottom: 2px solid #ddd;
       //height: 100%;
       padding-top: 10px;
       padding-bottom: 5px;
     }
-    .mat-tab-body-content
-    {
+    .mat-tab-body-content {
       overflow-x: hidden;
     }
-    .mat-form-field-wrapper
-    {
+    .mat-form-field-wrapper {
       padding-bottom: 10px;
     }
-    .mat-form-field-suffix .mat-icon-button
-    {
+    .mat-form-field-suffix .mat-icon-button {
       position: absolute;
       right: 4px;
       top: -8px;
     }
-    .mat-form-field
-    {
+    .mat-form-field {
       width: 100%;
-      .mat-form-field-infix
-      {
+      .mat-form-field-infix {
         //border-bottom: 2px solid #ddd;
         border-bottom: none;
         padding-bottom: 0;
       }
     }
-    mat-radio-group
-    {
+    .mat-form-field.border-0 .mat-form-field-infix{
+      border: none;
+    }
+    mat-radio-group {
       display: block;
       padding: .4375em 0;
       border-top: 13.5px solid transparent;
-      .mat-radio-button
-      {
+      .mat-radio-button {
         margin-left: 20px;
       }
     }
-    label
-    {
+    label {
       color: #999;
       line-height: 27px;
       font-size: 1rem;
       margin-bottom: 0;
     }
-    .mat-form-field-label-wrapper
-    {
+    .mat-form-field-label-wrapper {
       padding-bottom: 10px;
     }
-    .mat-radio-group,.mat-form-field
-    {
+    .mat-radio-group, .mat-form-field {
       padding-bottom: 0;
+    }
+    .inline-span-input input {
+      width: 70px;
+      border: none;
+      border-bottom: 2px solid #ddd;
+      margin-left: 10px;
     }
   }
 }
-.gray-btn{
+
+.gray-btn {
   background-color: #eee;
   color: #888;
   border: none;
@@ -270,10 +272,10 @@
 }
 
 /// allllllliiiiii
-.mat-datepicker-toggle-default-icon{
+.mat-datepicker-toggle-default-icon {
   width: 2em !important;
 }
-.light-grey-bg
-{
-  background-color: #eee!important;
+
+.light-grey-bg {
+  background-color: #eee !important;
 }

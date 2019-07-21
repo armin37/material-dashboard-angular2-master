@@ -1,1 +1,115 @@
-<p>cl-personal-assessment works!</p>
+<div class="p-grid">
+    <div class="p-col">
+        <mat-form-field>
+                <textarea matInput type="text" class="light-grey-bg new-intake-input"
+                          rows="4"
+                          placeholder="How has trauma and tragedy affected your life"></textarea>
+        </mat-form-field>
+        <mat-form-field>
+                <textarea matInput type="text" class="light-grey-bg new-intake-input"
+                          rows="4"
+                          placeholder="Are you or have you been a sexually exploited person?"></textarea>
+        </mat-form-field>
+
+        <mat-select placeholder="Have you ever been diagnosed with any of the following?"
+                    class="margin-t-20 margin-b-10 new-intake-select">
+            <mat-option value="FASD">
+                FASD
+            </mat-option>
+            <mat-option>
+                ADHD
+            </mat-option>
+            <mat-option>
+                Depression
+            </mat-option>
+            <mat-option>
+                Mental Illness
+            </mat-option>
+        </mat-select>
+
+        <mat-form-field>
+                <textarea matInput type="text" class="light-grey-bg new-intake-input"
+                          rows="4"
+                          placeholder="If yes please explain"></textarea>
+        </mat-form-field>
+    </div>
+    <div class="p-col">
+        <div class="item-wrapper">
+            <mat-radio-group aria-label="Do you have thoughts of self harm or suicide?">
+                <label>Do you have thoughts of self harm or suicide?</label>
+                <mat-radio-button value="1">Yes</mat-radio-button>
+                <mat-radio-button value="2">No</mat-radio-button>
+            </mat-radio-group>
+        </div>
+
+        <div class="item-wrapper">
+            <mat-radio-group aria-label="Do you have access to an Elder or Counselor?">
+                <label>Do you have access to an Elder or Counselor?</label>
+                <mat-radio-button value="1">Yes</mat-radio-button>
+                <mat-radio-button value="2">No</mat-radio-button>
+            </mat-radio-group>
+        </div>
+
+        <div class="item-wrapper">
+            <mat-radio-group aria-label="Would you like to see a:">
+                <label>Would you like to see a:</label>
+                <mat-radio-button value="1">Elder</mat-radio-button>
+                <mat-radio-button value="2">Counselor</mat-radio-button>
+            </mat-radio-group>
+        </div>
+
+        <mat-radio-group class="margin-t-10" aria-label="Do you have any health/disability concerns?">
+            <label>Do you have any health/disability concerns?</label>
+            <mat-radio-button value="1">Yes</mat-radio-button>
+            <mat-radio-button value="2">No</mat-radio-button>
+        </mat-radio-group>
+
+        <mat-form-field class="border-0">
+                <textarea matInput type="text" class="light-grey-bg new-intake-input"
+                          rows="4"
+                          placeholder=""></textarea>
+        </mat-form-field>
+        <div class="item-wrapper flex-column margin-t-10">
+            <div class="p-grid p-nogutter">
+                <div class="p-col-5">
+                    <label>Age of first experience with:</label>
+                </div>
+                <div class="p-col">
+                    <div class="p-grid">
+                        <div class="p-col inline-span-input">
+                            <label>Alcohol</label>
+                            <input type="text" class="new-intake-input" placeholder=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-col">
+                    <div class="p-grid">
+                        <div class="p-col inline-span-input">
+                            <label>Drugs</label>
+                            <input type="text" class="new-intake-input" placeholder=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <mat-radio-group class="margin-t-10" aria-label="Do you have an issue with negative coping skills?">
+            <label>Do you have an issue with negative coping skills?</label>
+            <mat-radio-button value="1">Yes</mat-radio-button>
+            <mat-radio-button value="2">No</mat-radio-button>
+        </mat-radio-group>
+
+        <mat-form-field class="border-0">
+                <textarea matInput type="text" class="light-grey-bg new-intake-input"
+                          rows="3"
+                          placeholder="If yes please explain"></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="">
+                <textarea matInput type="text" class="light-grey-bg new-intake-input"
+                          rows="4"
+                          placeholder="How have drugs or alcohol affected your life?"></textarea>
+        </mat-form-field>
+
+    </div>
+</div>
