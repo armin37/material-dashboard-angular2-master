@@ -1,1 +1,190 @@
-<p>cl-cfs-details works!</p>
+<div class="p-grid">
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="Name of Social Worker">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="Social Worker Phone Number">
+            </mat-form-field>
+        </div>
+    </div>
+</div>
+<div class="p-grid">
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="Lawyer Name">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="Lawyer Phone Number">
+            </mat-form-field>
+        </div>
+    </div>
+</div>
+<div class="p-grid">
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="Source of Income">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="EIA Worker Name & Number [If Applicable)">
+            </mat-form-field>
+        </div>
+    </div>
+</div>
+
+<div class="p-grid">
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="Please List All Children">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="How Many Children Are in CFS Care?">
+            </mat-form-field>
+        </div>
+    </div>
+</div>
+
+
+<div class="p-grid">
+    <div class="p-col-6">
+        <div class="p-grid">
+            <div class="p-col-6">
+                <div class="item-wrapper">
+                    <div class="ui-inputgroup">
+                        <mat-form-field>
+                            <input matInput type="text" class="new-intake-input"
+                                   placeholder="Name">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <div class="p-col-6">
+                <div class="item-wrapper">
+                    <mat-form-field>
+                        <input matInput class="new-intake-input" [matDatepicker]="picker11"
+                               placeholder="Date of Birth">
+                        <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="p-grid">
+            <div class="p-col-6">
+                <div class="item-wrapper">
+                    <div class="ui-inputgroup">
+                        <mat-form-field>
+                            <input matInput type="text" class="new-intake-input"
+                                   placeholder="Name">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <div class="p-col-6">
+                <div class="item-wrapper">
+                    <mat-form-field>
+                        <input matInput class="new-intake-input" [matDatepicker]="picker12"
+                               placeholder="Date of Birth">
+                        <mat-datepicker-toggle matSuffix [for]="picker12"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-col-6">
+        <div class="p-grid">
+            <div class="p-col-12">
+                <div class="item-wrapper">
+                    <div class="ui-inputgroup">
+                        <mat-form-field>
+                            <input matInput type="text" class="new-intake-input"
+                                   placeholder="How Many Children Are in CFS Care?">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <div class="p-col-12">
+                <div class="item-wrapper">
+                    <div class="ui-inputgroup">
+                        <mat-form-field>
+                            <input matInput type="text" class="new-intake-input"
+                                   placeholder="How Long Have Your Children Been in CFS Care? ">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="p-grid">
+    <div class="p-col">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="Reason for Apprehension ">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="p-col">
+        <div class="item-wrapper">
+            <mat-radio-group aria-label="Living Together">
+                <label>Are the Childern With Family (Kinship Care)? </label>
+                <mat-radio-button value="1">Yes</mat-radio-button>
+                <mat-radio-button value="2">No</mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </div>
+</div>
+<div class="p-grid">
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="Why Are You Seeking Advocacy?">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="p-col-6">
+        <div class="item-wrapper">
+            <mat-form-field>
+                <input matInput type="text" class="new-intake-input"
+                       placeholder="Any Concerns About Your Childern's Welfare? ">
+            </mat-form-field>
+        </div>
+    </div>
+</div>
+<div class="p-grid">
+    <div class="p-col-6 p-col-align-end">
+        <button type="button" class="gray-btn">Save & Continue</button>
+    </div>
+</div>
