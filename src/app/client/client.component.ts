@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 export interface PeriodicElement {
     Account: number;
     Name: string;
@@ -67,9 +68,12 @@ export class ClientComponent implements OnInit {
         {value: 'pizza-2', viewValue: 'Pizza'},
         {value: 'tacos-3', viewValue: 'Tacos'}
     ];
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+    goToClientIntake() {
+        this.router.navigate(['clientIntake']);
+    }
 }
