@@ -12,7 +12,8 @@
     z-index: 2;
     width: 260px;
     background: $white-color;
-    @include shadow-big();
+    box-shadow: 1px 1px 12px 0px #ddd;
+    border-right: 1px solid #aaa;
 
     .caret{
       display: inline-block;

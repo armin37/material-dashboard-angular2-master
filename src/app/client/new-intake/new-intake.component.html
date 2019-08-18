@@ -1,164 +1,183 @@
 <div class="main-content">
     <div class="page-wrapper-cs">
         <div class="new-intake-header">
-            <p>new-intake</p>
+            <p>New Intake</p>
         </div>
-        <div class="ui-g ui-fluid">
-            <div class="ui-g-12 ui-md-4">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                    <input matInput type="text"  class="new-intake-input" placeholder="First Name">
-                    </mat-form-field>
-                </div>
-            </div>
 
-            <div class="ui-g-12 ui-md-4">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Middle Name">
-                    </mat-form-field>
-                </div>
-            </div>
+        <div class="fields-wrapper">
+            <form [formGroup]="form" (ngSubmit)="saveData($event)">
+                <div class="ui-g ui-fluid">
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field class="all-padd-b-0">
+                                <input matInput type="text"
+                                       pattern="[a-zA-Z]*" formControlName="firstName"
+                                       class="new-intake-input text-capitalize" placeholder="First Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
 
-            <div class="ui-g-12 ui-md-4">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Last Name">
-                    </mat-form-field>
-                </div>
-            </div>
-        </div>
-        <div class="ui-g ui-fluid">
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field>
-                        <mat-label>Client Type</mat-label>
-                        <mat-select  class="new-intake-select"   >
-                            <mat-option *ngFor="let food of foods" [value]="food.value">
-                                {{food.viewValue}}
-                            </mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                </div>
-            </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input matInput formControlName="middleName"
+                                       type="text" class="new-intake-input text-capitalize"
+                                       placeholder="Middle Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
 
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                    <input matInput class="new-intake-input"  [matDatepicker]="picker1" placeholder="Date">
-                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-                    <mat-datepicker #picker1></mat-datepicker>
-                    </mat-form-field>
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input matInput type="text"
+                                       formControlName="lastName"
+                                       class="new-intake-input text-capitalize"
+                                       placeholder="Last Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="ui-g ui-fluid">
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                    <input matInput class="new-intake-input"  [matDatepicker]="picker" placeholder="Date of birth">
-                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                    <mat-datepicker #picker></mat-datepicker>
-                    </mat-form-field>
-                </div>
-            </div>
+                <div class="ui-g ui-fluid">
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <mat-label>Client Type</mat-label>
+                                <mat-select class="new-intake-select">
+                                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                                        {{food.viewValue}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
 
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Address">
-                    </mat-form-field>
-                </div>
-            </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input matInput formControlName="date"
+                                       class="new-intake-input" [matDatepicker]="picker1" placeholder="Date">
+                                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                <mat-datepicker #picker1></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                    </div>
 
-        </div>
-        <div class="ui-g ui-fluid">
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="City">
-                    </mat-form-field>
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input matInput formControlName="dateOfBirth" class="new-intake-input"
+                                       [matDatepicker]="picker"
+                                       placeholder="Date of birth">
+                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Postal Code">
-                    </mat-form-field>
+                <div class="ui-g ui-fluid">
+                    <div class="ui-g-12 ui-md-12">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input matInput type="text" class="new-intake-input" placeholder="Address">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-        </div>
-        <div class="ui-g ui-fluid">
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Province">
-                    </mat-form-field>
+                <div class="ui-g ui-fluid">
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input matInput type="text" class="new-intake-input text-capitalize" placeholder="City">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input matInput type="text" class="new-intake-input" placeholder="Province">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input matInput type="text" class="new-intake-input" placeholder="Postal Code">
+                            </mat-form-field>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Phone">
-                    </mat-form-field>
+                <div class="ui-g ui-fluid">
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input matInput type="text" class="new-intake-input" placeholder="Phone">
+                            </mat-form-field>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="ui-g ui-fluid">
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Second Phone">
-                    </mat-form-field>
+
+                <div class="ui-g ui-fluid">
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input matInput type="text" class="new-intake-input text-capitalize"
+                                       placeholder="Emergency Contact Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input matInput type="text" class="new-intake-input"
+                                       placeholder="Emergency Contact Phone">
+                            </mat-form-field>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Email Address">
-                    </mat-form-field>
+
+                <div class="ui-g ui-fluid">
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input formControlName="email" matInput
+                                       type="text" class="new-intake-input" placeholder="Email Address">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-inputgroup">
+                            <mat-form-field>
+                                <input matInput type="text" class="new-intake-input text-capitalize"
+                                       placeholder="Brand or Community">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="ui-g-12 ui-md-4">
+                        <mat-form-field>
+                            <mat-label>Select Program</mat-label>
+                            <mat-select class="new-intake-select">
+                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                    {{food.viewValue}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="ui-g ui-fluid">
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Emergency Contact Name">
-                    </mat-form-field>
+
+                <div class="ui-g ui-fluid">
+
+                    <div class="ui-g-12 ui-md-12">
+                        <div class="ui-inputgroup p-justify-end">
+                            <button type="submit" class="new-intake-button">Save
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Emergency Contact Phone">
-                    </mat-form-field>
-                </div>
-            </div>
-        </div>
-        <div class="ui-g ui-fluid">
-            <div class="ui-g-12 ui-md-6">
-                <div class="ui-inputgroup">
-                    <mat-form-field  >
-                        <input matInput type="text"  class="new-intake-input" placeholder="Brand or Community">
-                    </mat-form-field>
-                </div>
-            </div>
-            <div class="ui-g-12 ui-md-3">
-                <mat-form-field>
-                <mat-label>Program</mat-label>
-                <mat-select  class="new-intake-select"   >
-                    <mat-option *ngFor="let food of foods" [value]="food.value">
-                        {{food.viewValue}}
-                    </mat-option>
-                </mat-select>
-                </mat-form-field>
-            </div>
-            <div class="ui-g-12 ui-md-3">
-                <div class="ui-inputgroup">
-                    <button type="button"  class="new-intake-button">save</button>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>
